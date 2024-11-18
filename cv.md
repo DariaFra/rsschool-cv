@@ -2,8 +2,6 @@
 
 ## Contacts
 
----
-
 **Location:** Krakow, Poland 
 **Phone:** +48 799 054 003  
 **Email:** [frank.darya@yandex.ru](mailto:frank.darya@yandex.ru)  
@@ -13,8 +11,6 @@
 
 ## About Me  
 
----
-
 I am a junior frontend developer. I can work with React and JavaScript, and use modern development tools. I know how to create an adaptive interface and connect the REST API. She gained practical experience in the framework of educational projects. 
 
 My goal is to grow as a professional, participate in interesting projects, learn from experienced colleagues and gain new knowledge.
@@ -22,8 +18,6 @@ My goal is to grow as a professional, participate in interesting projects, learn
 ---
 
 ## Skills  
-
----
 
 - **Programming Languages:** JavaScript, TypeScript  
 - **Frameworks:** React 
@@ -36,16 +30,12 @@ My goal is to grow as a professional, participate in interesting projects, learn
 
 ## Code Examples  
 
----
-
 - **[project-mesto](https://github.com/DariaFra/mesto-project-ff):**   
   **Features:** Add, edit, and delete cards. Upload cards from the server. Update the user's avatar   
    
 ---
 
 ## Education  
-
----
 
 - **Specialist Degree, Management**  
   Siberian Academy of Law, Economics, and Management (2006 — 2010)  
@@ -54,7 +44,5 @@ My goal is to grow as a professional, participate in interesting projects, learn
 ---
 
 ## English Proficiency  
-
----
 
 - **Level:** B2   
