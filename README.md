@@ -1,4 +1,2 @@
 
-# https://github.com/DariaFra/rsschool-cv/tree/gh-pages
-
-## rsschool-cv
+# [GitHub](https://github.com/DariaFra/rsschool-cv/blob/gh-pages/cv.md)
