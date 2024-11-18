@@ -1,0 +1,14 @@
+.cv_wrapper {
+    font-size: 45px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.my_cv {
+    text-decoration: none;
+    color: black;
+}
+
+.my_cv:hover {
+    color: brown;
+}
