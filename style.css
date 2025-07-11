@@ -1,14 +1,240 @@
-.cv_wrapper {
-    font-size: 45px;
-    text-align: center;
-    background-color: gainsboro;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.my_cv {
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "IBM Plex Mono", sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    height: 100vh;
+}
+
+.header {
+    max-width: 1200px;
+    height: 80px;
+    background: rgb(143 166 155);
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header__nav-link {
+    margin-left: 20px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px;
+    outline: 2px solid #989292;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__nav-link:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.header__nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: ease 0.3s;
+    background-color: #989292;
+    z-index: -1;
+}
+
+.header__nav-link:hover::after {
+    cursor: pointer;
+    transform: scale(1, 1);
+}
+
+.header__nav-link-text {
+    mix-blend-mode: multiply;
+    color: #000;
+}
+
+.cv {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cv__content {
+    width: 60%;
+    overflow: visible;
+    background: #eee;
+    padding: 20px 50px;
+}
+
+.cv__photo-section {
+    width: 40%;
+    overflow: visible;
+    background-color: rgb(142, 166, 155);
+}
+
+.section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #837d7d;
+    scroll-margin-top: 100px;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section__title {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__text {
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.section__text-strong {
+    font-weight: 700;
+}
+
+.section__link {
+    color: #467466;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+}
+
+.section__link::before {
+    content: '\2726';
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+
+.section__link:hover {
+    transform: scale(1.2);
+}
+
+.section__item {
+    margin-bottom: 10px;
+}
+
+.section__item::before {
+    content: '\2726';
+    position: absolute;
+    inset-inline-start: -5px;
+    inset-block-start: 0;
+}
+
+.section__list .section__item {
+    padding-left: 20px;
+    position: relative;
+}
+
+.photo__wrapper {
+    background-color: #fff;
+    max-height: 700px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 0 0 45% 45%;
+}
+
+.photo__image {
+    object-fit: cover;
+    max-width: 90%;
+    padding: 20px 5px;
+    padding-top: 50px;
+    border-radius: inherit;
+}
+
+.address {
+    display: flex; 
+    flex-direction: column;
+}
+
+.contacts__list {
+    padding: 20px;
+}
+
+.contacts__item {
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.contacts__item-icon {
+    padding: 0 15px;
+}
+
+.contacts__item-img {
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.contacts__item-link {
+    color: #fff;
+    display: inline-block;
+}
+
+.contacts__item-link:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+.footer {
+    padding: 20px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.footer__link {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
-.my_cv:hover {
-    color: brown;
+
+.footer__logo-link-img {
+    display: inline-block;
+    height: 40px;
 }
